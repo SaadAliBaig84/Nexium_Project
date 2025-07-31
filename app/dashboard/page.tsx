@@ -83,7 +83,7 @@ export default function TailorResumePage() {
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
-    router.replace("/sign-in");
+    router.replace("/");
   };
 
   return (
