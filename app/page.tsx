@@ -3,11 +3,11 @@ import { FileUser } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/app/core/supabase/client";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 export default function LandingPage() {
   const router = useRouter();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const checkSession = async () => {
       const {
         data: { session },
