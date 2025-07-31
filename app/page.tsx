@@ -6,7 +6,7 @@ import { supabase } from "@/app/core/supabase/client";
 import { useEffect, useState } from "react";
 export default function LandingPage() {
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkSession = async () => {
@@ -27,7 +27,6 @@ export default function LandingPage() {
           <p className="text-white text-lg">Checking authentication...</p>
         ) : (
           <>
-            {" "}
             <div className="relative flex items-center justify-center">
               {/* Wave */}
 
