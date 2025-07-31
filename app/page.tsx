@@ -1,5 +1,5 @@
 "use client";
-import { BrainCircuit } from "lucide-react";
+import { FileUser } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/app/core/supabase/client";
@@ -47,15 +47,15 @@ export default function LandingPage() {
             }}
             className="relative z-10 p-4"
           >
-            <BrainCircuit className="w-20 h-20 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+            <FileUser className="w-20 h-20 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
           </motion.div>
         </div>
         <h1 className="text-5xl font-extrabold tracking-wide text-center drop-shadow-md">
-          Smart Research Assistant
+          Resume Tailor
         </h1>
         <p className="text-lg text-center max-w-xl text-white/80">
-          Your AI-powered tool for summarizing, translating, and understanding
-          research articles with ease.
+          Your AI-powered tool for tailoring your resume to a given job
+          description.
         </p>
         <button
           className="mt-6 px-6 py-3 bg-[#F8B55F] text-[#4a2574] font-semibold rounded-2xl shadow-md hover:bg-gray-100 transition"

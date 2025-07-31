@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import { supabase } from "@/app/core/supabase/client";
 import { useRouter } from "next/navigation";
-import { BrainCircuit, Loader, Upload, X, User } from "lucide-react"; // ✅ User icon added
+import { FileUser, Loader, Upload, X, User } from "lucide-react"; // ✅ User icon added
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -110,7 +110,7 @@ export default function TailorResumePage() {
       </div>
 
       <h1 className="text-3xl font-bold mb-6 flex items-center gap-2">
-        <BrainCircuit className="w-7 h-7" /> Tailor Your Resume
+        <FileUser className="w-7 h-7" /> Tailor Your Resume
       </h1>
 
       {/* ✅ Existing Content */}
