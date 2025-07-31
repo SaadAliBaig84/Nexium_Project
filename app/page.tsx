@@ -15,8 +15,6 @@ export default function LandingPage() {
 
       if (data.session) {
         router.replace("/dashboard");
-      } else {
-        router.replace("/");
       }
       setLoading(false);
     };
