@@ -8,14 +8,7 @@ export default function LandingPage() {
   const router = useRouter();
 
   useEffect(() => {
-    const checkSession = async () => {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
-      if (session) router.replace("/dashboard");
-    };
-
-    checkSession();
+    router.replace("/auth-check");
   }, [router]);
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-[#4a2574] to-[#0f0529] flex flex-col items-center justify-center text-white px-4">

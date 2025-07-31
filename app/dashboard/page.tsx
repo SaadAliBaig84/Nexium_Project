@@ -25,7 +25,7 @@ export default function TailorResumePage() {
     const getUser = async () => {
       const { data } = await supabase.auth.getUser();
       if (data?.user) setUserEmail(data.user.email ?? null);
-      else router.replace("/sign-in");
+      else router.replace("/");
     };
     getUser();
   }, [router]);
