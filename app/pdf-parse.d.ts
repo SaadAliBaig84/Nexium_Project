@@ -3,22 +3,22 @@ declare module "pdf-parse/lib/pdf-parse" {
   interface PDFInfo {
     numpages: number;
     numrender: number;
-    info: Record<string, any>;
-    metadata: any;
+    info: Record<string, unknown>;
+    metadata: unknown;
     version: string;
     text: string;
   }
 
   interface PDFData {
     text: string;
-    info: PDFInfo["info"];
-    metadata: any;
+    info: Record<string, unknown>;
+    metadata: unknown;
     version: string;
     numpages: number;
   }
 
   interface PDFParseOptions {
-    pagerender?: (pageData: any) => Promise<string>;
+    pagerender?: (pageData: unknown) => Promise<string>;
     max?: number;
     version?: string;
   }
